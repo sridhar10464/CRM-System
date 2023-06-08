@@ -12,7 +12,7 @@ const userVerificationUrl = userProfileUrl + "/verify";
 export const UserRegistration = (formData) => {
   return new Promise(async (resolve, reject) => {
     try {
-      const res = await axios.post(userProfileUrl, formData);
+      const res = await axios.post("https://crm-system-ikhw.onrender.com/v1/user", formData);
       // const res = await fetch('http://localhost:3001/v1/user', {
       //     method: 'POST',
       //     headers: {
