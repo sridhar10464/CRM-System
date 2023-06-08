@@ -1,0 +1,56 @@
+### User signing up endpoint
+POST http://localhost:3001/v1/user
+Content-Type: application/json
+
+{
+    "name": "Sridhar",
+    "company": "Company name",
+    "address": "Some address in TN",
+    "phone": "9876543210",
+    "email": "user1@email.com",
+    "password": "12345678"
+}
+
+### User sign in endpoint
+POST http://localhost:3001/v1/user/login
+Content-Type: application/json
+
+{
+    "email": "user1@email.com",
+    "password": "user123"
+}
+
+### Get User profile endpoint
+GET http://localhost:3001/v1/user
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGVtYWlsLmNvbSIsImlhdCI6MTY4NTY5NTg1OCwiZXhwIjoxNjg1NzgyMjU4fQ.05R2uvQlM1EKq2gVEGfjzwm2zghKBL5hzf8rLRAxhA4
+
+
+### Get refreshed Token
+
+GET http://localhost:3001/v1/tokens
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGVtYWlsLmNvbSIsImlhdCI6MTY4NTQxNzU3NiwiZXhwIjoxNjg4MDA5NTc2fQ.WZc4kYnbQ_whC7cyjR7pMI4e7-l6N-0w-mZAvK2UNbU
+
+#### Password reset endpoints
+
+POST http://localhost:3001/v1/user/reset-password
+Content-Type: application/json
+
+{
+    "email": "user1@email.com"
+}
+
+#### Update new password endpoint
+
+PATCH http://localhost:3001/v1/user/reset-password
+Content-Type: application/json
+
+{
+    "email": "user1@email.com",
+    "pin": 144805,
+    "newPassword": "user123"
+}
+
+#### User logout endpoint
+
+DELETE http://localhost:3001/v1/user/logout
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGVtYWlsLmNvbSIsImlhdCI6MTY4NTQ1MTI2MSwiZXhwIjoxNjg1NTM3NjYxfQ.SM3x05EPPiOhNFgmT1gBQQPx74gYp_OJFUaHc5jvZjg
