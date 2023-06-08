@@ -3,7 +3,7 @@
 This api is a part of create CRM system with MERN stack
 
 Note:
-The `Registration` page and `Forgot password` page is not open by render server, so pls use the below mentioned email and password.
+The `Registration` page and `Forgot password` page is not open by render server, but the render backend link is works in local, so pls use the below mentioned email and password to login to the CRM system.
 
 `Email` - user1@email.com
 `Password` - 123456@Ab
