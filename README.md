@@ -4,6 +4,7 @@ This api is a part of create CRM system with MERN stack
 
 Note:
 The `Registration` page and `Forgot password` page is not open by render server, so pls use the below mentioned email and password.
+
 `Email` - user1@email.com
 `Password` - 123456@Ab
 
