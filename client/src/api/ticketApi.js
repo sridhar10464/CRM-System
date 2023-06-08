@@ -1,13 +1,13 @@
 import axios from "axios";
 
-const rootUrl = "http://localhost:3001/v1/";
+const rootUrl = "https://crm-system-ikhw.onrender.com/v1/";
 const ticketUrl = rootUrl + "ticket/";
 const closeTicketUrl = rootUrl + "ticket/close-ticket/";
 
 export const getAllTickets = () => {
   return new Promise(async (resolve, reject) => {
     try {
-      const result = await axios.get("http://localhost:3001/v1/ticket", {
+      const result = await axios.get("https://crm-system-ikhw.onrender.com/v1/ticket", {
           headers: {
             // Authorization: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGVtYWlsLmNvbSIsImlhdCI6MTY4NTc4NTA1MiwiZXhwIjoxNjg1ODcxNDUyfQ.-F7dHBSqpD472xPavWXDXqyaQDaHNn27FRD49s_8WZ0"
           Authorization: sessionStorage.getItem("accessJWT"),
