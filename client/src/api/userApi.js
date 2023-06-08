@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 // const loginUrl = "http://localhost:3001/v1/user/login";
-const rootUrl = "http://localhost:3001/v1/";
+const rootUrl = "https://crm-system-ikhw.onrender.com/v1/";
 const loginUrl = rootUrl + "user/login";
 const userProfileUrl = rootUrl + "user";
 const logoutUrl = rootUrl + "user/logout";
